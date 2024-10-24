@@ -1,3 +1,7 @@
+#Alunas: Jamile, Aiana e Lara
+#Turma: G93313
+
+
 import os
 os.system ("cls || clear")
 
