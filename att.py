@@ -16,7 +16,7 @@ def calcular_inss(salario_base):
     elif salario_base <= 6433.57:
         return salario_base * 0.14
     else:
-        return 854.36  # Teto máximo do INSS
+        return 854.36  
 
 
 def calcular_irrf(salario_base, dependentes):
@@ -41,7 +41,7 @@ def calcular_folha_pagamento():
     salario_base = float(input("Informe o salário base (em R$): "))
     vale_transporte = input("Deseja receber vale transporte? (s/n): ").lower()
     vale_refeicao = float(input("Informe o valor do vale refeição fornecido pela empresa (em R$): "))
-    dependentes = 1  # Considerando apenas 1 dependente
+    dependentes = 1  
     
    
     inss = calcular_inss(salario_base)
@@ -64,5 +64,5 @@ def calcular_folha_pagamento():
     print(f"Desconto Plano de Saúde: R$ {plano_saude:.2f}")
     print(f"Salário Líquido: R$ {salario_liquido:.2f}")
 
-# Chama a função principal
+
 calcular_folha_pagamento()
